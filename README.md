@@ -8,10 +8,10 @@ Desenvolvimento de um Sistema de Estacionamento Usando TypeScript com código or
 
 ### Registro de veículos:
 
-- [ ] Nome do proprietário
-- [ ] Placa do veículo
-- [ ] Horário de entrada
-- [ ] Horário de saída (se necessário)
+- [X] Nome do proprietário
+- [X] Placa do veículo
+- [X] Horário de entrada
+- [X] Horário de saída (se necessário)
 
 ## Funcionalidades adicionais:
 
