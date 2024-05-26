@@ -4,6 +4,8 @@ Development of a Parking System Using TypeScript with Object-Oriented Code.
 
 Desenvolvimento de um Sistema de Estacionamento Usando TypeScript com código orientado a objetos.
 
+![Status: em desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge)
+
 ## Funcionalidades básicas:
 
 ### Registro de veículos:
