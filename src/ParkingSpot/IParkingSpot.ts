@@ -8,7 +8,7 @@ export enum VacancyType {
 
 // Interface que define a estrutura de uma vaga de estacionamento
 export interface IParkingSpot {
-  idVacancy: string; // ID da vaga
+  idVacancy: number; // ID da vaga
   vacancyType: VacancyType; // Tipo de vaga: carro, moto
   isAvailable: boolean; // Vaga disponível?
 

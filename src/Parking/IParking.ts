@@ -8,5 +8,5 @@ export interface IParking {
 
   findAvailableVacancy(): IParkingSpot | null; // Encontrar vaga disponível
   parkVehicle(vehicle: Vehicle, vacancyType: VacancyType): IParkingSpot | null;
-  releaseVehicleFromSpot(spotId: string): void; // Liberar veículo de uma vaga
+  releaseVehicleFromSpot(spotId: number): void; // Liberar veículo de uma vaga
 }

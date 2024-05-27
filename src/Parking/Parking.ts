@@ -18,7 +18,7 @@ export class Parking implements IParking {
     for (let i = 0; i < totalVacancies; i++) {
       const type =
         i < totalVacancies / 2 ? VacancyType.Car : VacancyType.Motorcycle;
-      this.spots.push(new ParkingSpot(`V${i + 1}`, type, true));
+      this.spots.push(new ParkingSpot(i + 1, type, true));
     }
   }
 
@@ -33,13 +33,13 @@ export class Parking implements IParking {
 
     if (availableSpot) {
       availableSpot.designateVehicle(vehicle);
-      this, this.availableVacancies--;
+      this.availableVacancies--;
       return availableSpot;
     }
     return null;
   }
 
-  releaseVehicleFromSpot(spotId: string): void {
+  releaseVehicleFromSpot(spotId: number): void {
     const spot = this.spots.find((spot) => spot.idVacancy === spotId);
     if (spot && !spot.isAvailable) {
       spot.releaseVehicle;

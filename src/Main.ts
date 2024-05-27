@@ -25,7 +25,7 @@ try {
 //
 //
 //
-console.log("\n");
+console.log("----------------------------------------------------------------");
 //
 //
 //
@@ -51,14 +51,14 @@ try {
 //
 //
 //
-console.log("\n");
+console.log("----------------------------------------------------------------");
 //
 //
 //
 
 // Exemplo de uso da classe ParkingSpot com o objeto myParkingSpot e myVehicle
 const myParkingSpot1 = new ParkingSpot(
-  "1",
+  0,
   VacancyType.Car, // Tipo de vaga usando a enumeração VacancyType
   true
 );
@@ -82,14 +82,14 @@ try {
 //
 //
 //
-console.log("\n");
+console.log("----------------------------------------------------------------");
 //
 //
 //
 
 // Exemplo de uso da classe ParkingSpot com o objeto myParkingSpot2 e myVehicle2
 const myParkingSpot2 = new ParkingSpot(
-  "2",
+  1,
   VacancyType.Motorcycle, // Tipo de vaga usando a enumeração VacancyType
   true
 );
@@ -113,7 +113,7 @@ try {
 //
 //
 //
-console.log("\n");
+console.log("----------------------------------------------------------------");
 //
 //
 //
@@ -122,6 +122,7 @@ console.log("\n");
 
 // Cria um novo estacionamento com 10 vagas
 const parking = new Parking(10);
+console.log(parking);
 
 // Cria um novo veículo
 const myCar = new Vehicle("Jon Doe", "ABDE1234", new Date());
@@ -139,3 +140,7 @@ if (spot) {
   parking.releaseVehicleFromSpot(spot.idVacancy);
   console.log(`Veículo liberado da vaga ${spot.idVacancy}`);
 }
+
+// console.log(parking)
+// console.log(myCar);
+// console.log(spot);

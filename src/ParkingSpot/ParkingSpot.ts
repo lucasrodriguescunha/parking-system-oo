@@ -2,13 +2,13 @@ import { Vehicle } from "../Vehicle/Vehicle";
 import { IParkingSpot, VacancyType } from "./IParkingSpot";
 
 export class ParkingSpot implements IParkingSpot {
-  idVacancy: string; // ID da vaga
+  idVacancy: number; // ID da vaga
   vacancyType: VacancyType; // Tipo de vaga: carro, moto
   isAvailable: boolean; // Vaga disponível?
   vehicle: Vehicle | null = null; // Veículo designado à vaga (null se a vaga estiver disponível)
 
   constructor(
-    idVacancy: string, // ID da vaga
+    idVacancy: number, // ID da vaga
     vacancyType: VacancyType, // Tipo de vaga: carro, moto
     isAvailable: boolean // Vaga disponível?
   ) {
