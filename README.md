@@ -24,8 +24,8 @@ Desenvolvimento de um Sistema de Estacionamento Usando TypeScript com código or
 
 ### 𝖢𝗈𝗇𝗍𝗋𝗈𝗅𝖾 𝖽𝖾 𝗏𝖺𝗀𝖺𝗌:
 
-- [ ] Número total de vagas
-- [ ] Número de vagas disponíveis
+- [X] Número total de vagas
+- [X] Número de vagas disponíveis
 - [ ] Designação de vagas específicas (para carros, motos, bicicletas, etc.)
 
 ### 𝖧𝗂𝗌𝗍𝗈́𝗋𝗂𝖼𝗈 𝖽𝖾 𝖾𝗌𝗍𝖺𝖼𝗂𝗈𝗇𝖺𝗆𝖾𝗇𝗍𝗈:
