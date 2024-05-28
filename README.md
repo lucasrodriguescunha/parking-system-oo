@@ -71,6 +71,10 @@ Instale my-project com npm
   cd my-project
 ```
 
+### Autor
+
+- [@lucasrodriguescunha](https://www.github.com/lucasrodriguescunha)
+
 ### Licença
 
 [MIT](https://choosealicense.com/licenses/mit/)
