@@ -64,11 +64,10 @@ Desenvolvimento de um Sistema de Estacionamento Usando TypeScript com código or
 
 ### Instalação
 
-Instale parking-system-oo com npm
-
 ```bash
-  npm install my-project
-  cd my-project
+  git clone https://github.com/lucasrodriguescunha/parking-system-oo.git
+  npm run build
+  npm run start
 ```
 
 ### Autor
