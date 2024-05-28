@@ -1,7 +1,7 @@
 {
-  "name": "parking-system-oo",
+  "name": "ParkingSystem",
   "version": "1.0.0",
-  "description": "",
+  "description": "Development of a Parking System Using TypeScript with Object-Oriented Code",
   "main": "index.js",
   "scripts": {
     "build": "tsc",
@@ -9,6 +9,6 @@
     "dev": "ts-node src/Main.ts"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "author": "Lucas Rodrigues Cunha",
+  "license": "MIT"
 }
