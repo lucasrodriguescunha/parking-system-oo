@@ -59,12 +59,12 @@ Desenvolvimento de um Sistema de Estacionamento Usando TypeScript com código or
 
 ### Stack utilizada
 
-**Front-end:** TypeScript
-**Back-end:** Node
+**Front-end:** JavaScript/TypeScript
+**Back-end:** Node.js
 
 ### Instalação
 
-Instale my-project com npm
+Instale parking-system-oo com npm
 
 ```bash
   npm install my-project
