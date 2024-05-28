@@ -56,6 +56,12 @@ Desenvolvimento de um Sistema de Estacionamento Usando TypeScript com código or
 - [ ] Monitoramento de câmeras (registro de imagens, se for possível)
 - [ ] Controle de acesso (entrada/saída por QR code, RFID, etc.)
 
+
+### Stack utilizada
+
+**Front-end:** TypeScript
+**Back-end:** Node
+
 ### Instalação
 
 Instale my-project com npm
