@@ -1,23 +1,38 @@
-import { IVehicle } from "./Vehicle/IVehicle";
+// Importa as classes necessárias
 import { Vehicle } from "./Vehicle/Vehicle";
 import { ParkingSpot } from "./ParkingSpot/ParkingSpot";
 import { VacancyType } from "./ParkingSpot/IParkingSpot";
 import { Parking } from "./Parking/Parking";
+import { IPayment, PaymentMethod } from "./Payment/IPayment";
 
-// Exemplo de uso da classe Parking e Vehicle com o objeto myCar
+// Cria um novo estacionamento com 100 vagas
+const parking = new Parking(100);
 
-const parking = new Parking(100); // Cria um novo estacionamento com 100 vagas
+// Mensagem de boas-vindas
+console.log(
+  "--------------------------------------------------------------------------------------------------------"
+);
+console.log("BEM-VINDO(A) AO ESTACIONAMENTO!");
+console.log(
+  "--------------------------------------------------------------------------------------------------------"
+);
 
-console.log("Bem-vindo ao Estacionamento!");
+console.log("\nHorista: ")
+console.log("--> 30m: R$2.50")
+console.log("--> 1h: R$5.00");
+
+console.log("\nMensalista: ")
+console.log("--> Mensal: R$50.00")
+
+console.log(
+  "\n--------------------------------------------------------------------------------------------------------"
+);
 console.log(
   "Por favor, estacione com cuidado e aproveite sua estadia conosco."
 );
-
-// Imprime a quantidade de vagas no estacionamento antes do carro chegar
-console.log(`\nTotal de vagas no estacionamento: ${parking.totalVacancies}`);
-
-// Imprime os dados
-console.log("\nDados obtidos:");
+console.log(
+  "--------------------------------------------------------------------------------------------------------"
+);
 
 // Cria um novo veículo
 const myCar = new Vehicle(
@@ -26,43 +41,78 @@ const myCar = new Vehicle(
   new Date("2023-05-25T08:00:00") // Horário de entrada
 );
 myCar.setExitTime(new Date("2023-05-25T12:30:00")); // Horário de saída
-// console.log(myCar); // Imprime todo o objeto myCar
 
-// Imprime apenas os dados necessários
-console.log(`Nome do cliente: ${myCar.ownerName}`);
-console.log(`\nPlaca do veículo: ${myCar.vehiclePlate}`);
-console.log(`\nHora de entrada no estacionamento: ${myCar.entryTime}`);
-console.log(`\nHora de saída do estacionamento: ${myCar.exitTime}`);
+// Imprime a quantidade de vagas disponíveis no estacionamento antes do carro chegar
+console.log(`Total de vagas no estacionamento: ${parking.totalVacancies}`);
+console.log("Você ocupou uma vaga no estacionamento");
 
-// TRATAR OS DADOS ACIMA COMO OS DE BAIXO, COLOCAR UM TEXTO EXPLICATIVO
+// Encontra uma vaga disponível e estaciona o veículo
+const spot = parking.parkVehicle(myCar, VacancyType.Car);
+if (spot) {
+  console.log(`Veículo estacionado na vaga [ ${spot.idVacancy} ]`);
 
+// Imprime os dados do cliente e do veículo
+console.log(
+  "--------------------------------------------------------------------------------------------------------"
+);
+console.log("\nCliente:");
 try {
+  console.log(`--> Nome do cliente: ${myCar.ownerName}`);
+  console.log(`--> Placa do veículo: ${myCar.vehiclePlate}`);
+  console.log(`--> Hora de entrada no estacionamento: ${myCar.entryTime}`);
+  console.log(`--> Hora de saída do estacionamento: ${myCar.exitTime}`);
   const duration = myCar.calculateParkingDuration(); // Calcula a duração no estacionamento
   const fee = myCar.getParkingFee(); // Calcula o valor do estacionamento
-  console.log(`\nDuração: ${duration} hours`);
-  console.log(`\nValor: R$ ${fee.toFixed(2)}`);
+  console.log(`--> Duração: ${duration} horas`);
+  console.log(`--> Valor: R$ ${fee.toFixed(2)}`);
+  console.log(
+    "\n--------------------------------------------------------------------------------------------------------"
+  );
 } catch (error) {
   console.error("\nErro na execução. Observar atentamente o código.");
 }
 
-// Encontra uma vaga disponível e estaciona o veículo
-const spot = parking.parkVehicle(myCar, VacancyType.Car);
-console.log("\nVocê ocupou uma vaga no estacionamento");
 
-// Imprime a quantidade de vagas no estacionamento depois do carro chegar
-console.log(`\nVagas disponíveis no momento: [ ${parking.availableVacancies} ]`);
 
-if (spot) {
-  console.log(`\nVeículo estacionado na vaga [ ${spot.idVacancy} ]`);
+  // Processa o pagamento
+  try {
+    const payment: IPayment = {
+      idPayment: "1", // Você precisa gerar um ID de pagamento de forma adequada
+      paymentMethod: PaymentMethod.Money, // Supondo que você vai usar o método de pagamento em dinheiro
+
+      processPayment: function () {
+        // Aqui você pode implementar a lógica para processar o pagamento e gerar um recibo
+        // Vamos apenas criar um recibo simples para este exemplo
+        return {
+          idPayment: this.idPayment,
+          paymentMethod: this.paymentMethod,
+
+          printReceipt: function () {
+            console.log("\nRecibo:")
+            console.log(`--> ID: ${this.idPayment}`);
+            console.log(`--> Método de pagamento: ${this.paymentMethod}`);
+            console.log(
+              "\n--------------------------------------------------------------------------------------------------------"
+            );
+          },
+        };
+      },
+    };
+
+    const receipt = payment.processPayment(); // Processa o pagamento
+    receipt.printReceipt(); // Imprime o recibo
+  } catch (error) {
+    console.error("\nErro ao processar o pagamento.");
+  }
+
+  // Libera a vaga
+  parking.releaseVehicleFromSpot(spot.idVacancy);
+  console.log(`\nVeículo liberado da vaga [ ${spot.idVacancy} ]`);
 } else {
   console.log("\nNenhuma vaga disponível.");
 }
 
-// Ver as vagas
-// console.log(parking);
-
-// Libera a vaga
-if (spot) {
-  parking.releaseVehicleFromSpot(spot.idVacancy);
-  console.log(`\nVeículo liberado da vaga [ ${spot.idVacancy} ]`);
-}
+// Imprime a quantidade de vagas disponíveis no estacionamento depois do carro chegar
+console.log(
+  `\nVagas disponíveis no momento: [ ${parking.availableVacancies} ]`
+);
