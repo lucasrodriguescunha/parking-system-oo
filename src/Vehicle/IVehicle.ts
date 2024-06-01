@@ -1,11 +1,16 @@
 // Interface que define a estrutura de um veículo
 export interface IVehicle {
-  ownerName: string; // Nome do proprietário
+  ownerName: string; // Nome do proprietário do veículo
   vehiclePlate: string; // Placa do veículo
-  entryTime: Date; // Hora de entrada
-  exitTime?: Date; // Hora de saída
+  entryTime: Date; // Horário de entrada do veículo
+  exitTime?: Date; // Horário de saída do veículo (opcional)
 
-  setExitTime(exitTime: Date): void; // Definir horário de saída
-  calculateParkingDuration(): number; // Calcular tempo de duração
-  getParkingFee(): number; // Obter taxa de estacionamento
+  // Método para definir o horário de saída do veículo
+  setExitTime(exitTime: Date): void;
+
+  // Método para calcular a duração do estacionamento do veículo
+  calculateParkingDuration(): number;
+
+  // Método para obter a taxa de estacionamento do veículo
+  getParkingFee(): number;
 }

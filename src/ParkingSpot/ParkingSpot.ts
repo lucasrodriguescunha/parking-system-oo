@@ -1,5 +1,5 @@
-import { Vehicle } from "../Vehicle/Vehicle";
-import { IParkingSpot, VacancyType } from "./IParkingSpot";
+import { Vehicle } from "../Vehicle/Vehicle"; // Importa a classe Vehicle
+import { IParkingSpot, VacancyType } from "./IParkingSpot"; // Importa a interface IParkingSpot e o tipo VacancyType
 
 export class ParkingSpot implements IParkingSpot {
   idVacancy: number; // ID da vaga
@@ -12,28 +12,28 @@ export class ParkingSpot implements IParkingSpot {
     vacancyType: VacancyType, // Tipo de vaga: carro, moto
     isAvailable: boolean // Vaga disponível?
   ) {
-    this.idVacancy = idVacancy;
-    this.vacancyType = vacancyType;
-    this.isAvailable = isAvailable;
+    this.idVacancy = idVacancy; // Inicializa o ID da vaga
+    this.vacancyType = vacancyType; // Inicializa o tipo de vaga
+    this.isAvailable = isAvailable; // Inicializa a disponibilidade da vaga
   }
 
-  // Funções
+  // Método para designar um veículo à vaga
   designateVehicle(vehicle: Vehicle): Vehicle | null {
-    // Designar veículo
-    if (this.isAvailable) {
-      this.vehicle = vehicle;
-      this.isAvailable = false;
-      return vehicle;
+    if (this.isAvailable) { // Se a vaga estiver disponível
+      this.vehicle = vehicle; // Designa o veículo à vaga
+      this.isAvailable = false; // Define a vaga como ocupada
+      return vehicle; // Retorna o veículo designado
     }
-    return null;
+    return null; // Retorna null se a vaga não estiver disponível
   }
+
+  // Método para liberar um veículo da vaga
   releaseVehicle(): void {
-    // Liberar veículo
-    if (this.vehicle !== null) {
-      this.vehicle = null;
-      this.isAvailable = true;
+    if (this.vehicle !== null) { // Se houver um veículo designado à vaga
+      this.vehicle = null; // Libera o veículo
+      this.isAvailable = true; // Define a vaga como disponível
     } else {
-      throw new Error("Nenhum veículo para liberar.");
+      throw new Error("Nenhum veículo para liberar."); // Lança um erro se não houver veículo designado à vaga
     }
   }
 }
