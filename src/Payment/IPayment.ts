@@ -10,6 +10,7 @@ export enum PaymentMethod {
 // Definição da interface IPayment
 export interface IPayment {
   idPayment: string; // Identificador único do pagamento
+  valuePayment: number // Valor do pagamento
   paymentMethod: PaymentMethod; // Método de pagamento utilizado
 
   // Método para processar o pagamento e gerar um recibo

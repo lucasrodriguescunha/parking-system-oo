@@ -1,4 +1,4 @@
-import { Vehicle } from "../Vehicle/Vehicle"; // Importa a classe Vehicle
+import { Vehicle } from "../Vehicle/Vehicle";  // Importa a classe Vehicle
 
 // Enumeração para os tipos de vaga
 export enum VacancyType {
@@ -9,7 +9,7 @@ export enum VacancyType {
 // Interface que define a estrutura de uma vaga de estacionamento
 export interface IParkingSpot {
   idVacancy: number; // ID da vaga
-  vacancyType: VacancyType; // Tipo de vaga: carro, moto
+  vacancyType: VacancyType; // Tipo de vaga: carro, motocicleta
   isAvailable: boolean; // Vaga disponível?
 
   // Método para designar um veículo à vaga

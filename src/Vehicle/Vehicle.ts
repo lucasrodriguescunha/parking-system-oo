@@ -35,11 +35,4 @@ export class Vehicle implements IVehicle {
     const durationInHours = durationInMilliseconds / (1000 * 60 * 60);
     return Math.ceil(durationInHours); // Arredonda para cima para considerar frações de hora como hora completa
   }
-
-  // Método para obter a taxa de estacionamento do veículo com base na duração
-  getParkingFee(): number {
-    const hourlyRate = 5; // Taxa por hora
-    const duration = this.calculateParkingDuration(); // Calcula a duração do estacionamento
-    return duration * hourlyRate; // Retorna a taxa total de estacionamento
-  }
 }

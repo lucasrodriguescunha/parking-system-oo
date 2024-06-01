@@ -11,6 +11,4 @@ export interface IVehicle {
   // Método para calcular a duração do estacionamento do veículo
   calculateParkingDuration(): number;
 
-  // Método para obter a taxa de estacionamento do veículo
-  getParkingFee(): number;
 }
