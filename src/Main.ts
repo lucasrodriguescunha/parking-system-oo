@@ -17,6 +17,10 @@ console.log(
   "--------------------------------------------------------------------------------------------------------"
 );
 
+console.log("\nDiária: ")
+console.log("--> Carro: ")
+console.log("--> Moto:")
+
 console.log("\nHorista: ")
 console.log("--> 30m: R$2.50")
 console.log("--> 1h: R$5.00");
