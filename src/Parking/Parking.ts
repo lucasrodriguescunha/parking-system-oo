@@ -1,51 +1,36 @@
-import { IParking } from "./IParking";
-import { ParkingSpot } from "../ParkingSpot/ParkingSpot";
-import { VacancyType } from "../ParkingSpot/IParkingSpot";
 import { Vehicle } from "../Vehicle/Vehicle";
 
-export class Parking implements IParking {
-  totalVacancies: number; 
-  availableVacancies: number; 
-  private spots: ParkingSpot[]; 
+export class Parking {
+  private totalVacancies: number;
+  private parkedVehicles: Vehicle[] = [];
 
   constructor(totalVacancies: number) {
-    this.totalVacancies = totalVacancies; 
-    this.availableVacancies = totalVacancies; 
-    this.spots = []; 
-
-    for (let i = 0; i < totalVacancies; i++) {
-      const type = i < totalVacancies / 2 ? VacancyType.Car : VacancyType.Motorcycle; 
-      this.spots.push(new ParkingSpot(i + 1, type, true)); 
-    }
+    this.totalVacancies = totalVacancies;
   }
 
-  findAvailableSpot(vehicleType: VacancyType): ParkingSpot | null {
-    for (const spot of this.spots) {
-      if (spot.isAvailable && spot.vacancyType === vehicleType) {
-        return spot;
-      }
-    }
-    return null;
+  // Retorna a quantidade de vagas disponíveis
+  get availableVacancies(): number {
+    return this.totalVacancies - this.parkedVehicles.length;
   }
 
+  // Estaciona um veículo
   parkVehicle(vehicle: Vehicle): void {
-    const spot = this.findAvailableSpot(vehicle.vehicleType as VacancyType);
-    if (spot) {
-      spot.designateVehicle(vehicle);
-      this.availableVacancies--;
+    if (this.availableVacancies > 0) {
+      this.parkedVehicles.push(vehicle);
+      console.log(`Veículo estacionado. Vagas disponíveis: ${this.availableVacancies}`);
     } else {
-      throw new Error("No available spot for this vehicle type.");
+      throw new Error("Não há vagas disponíveis.");
     }
   }
 
+  // Libera um veículo
   releaseVehicle(vehicle: Vehicle): void {
-    for (const spot of this.spots) {
-      if (spot.vehicle?.vehiclePlate === vehicle.vehiclePlate) {
-        spot.releaseVehicle();
-        this.availableVacancies++;
-        return;
-      }
+    const index = this.parkedVehicles.indexOf(vehicle);
+    if (index > -1) {
+      this.parkedVehicles.splice(index, 1);
+      console.log(`Veículo liberado. Vagas disponíveis atualizadas: ${this.availableVacancies}`);
+    } else {
+      throw new Error("Veículo não encontrado no estacionamento.");
     }
-    throw new Error("Vehicle not found in the parking.");
   }
 }

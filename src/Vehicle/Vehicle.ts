@@ -1,29 +1,20 @@
-import { IVehicle } from "./IVehicle";
+import { VacancyType } from "../ParkingSpot/IParkingSpot"; // Adicione esta linha
 
-export class Vehicle implements IVehicle {
-  public ownerName: string;
-  public vehiclePlate: string;
-  public entryTime: Date;
-  public exitTime?: Date;
-  public vehicleType: string;
+export class Vehicle {
+  constructor(
+    public ownerName: string,
+    public vehiclePlate: string,
+    public vehicleType: VacancyType,
+    public entryTime: Date,
+    public exitTime: Date
+  ) {}
 
-  constructor(ownerName: string, vehiclePlate: string, vehicleType: string, entryTime: Date) {
-    this.ownerName = ownerName;
-    this.vehiclePlate = vehiclePlate;
-    this.entryTime = entryTime;
-    this.vehicleType = vehicleType;
-  }
-
-  setExitTime(exitTime: Date): void {
-    this.exitTime = exitTime;
-  }
-
-  calculateParkingDuration(): number {
-    if (!this.exitTime) {
-      throw new Error("Exit time not set.");
-    }
+  // Método para calcular a duração do estacionamento em horas e minutos
+  calculateParkingDuration(): { hours: number, minutes: number } {
     const durationInMilliseconds = this.exitTime.getTime() - this.entryTime.getTime();
-    const durationInHours = durationInMilliseconds / (1000 * 60 * 60);
-    return Math.ceil(durationInHours);
+    const durationInMinutes = Math.floor(durationInMilliseconds / (1000 * 60)); // Duração em minutos
+    const hours = Math.floor(durationInMinutes / 60);
+    const minutes = durationInMinutes % 60;
+    return { hours, minutes };
   }
 }

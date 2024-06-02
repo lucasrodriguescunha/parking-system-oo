@@ -1,7 +1,6 @@
 import { Vehicle } from "../Vehicle/Vehicle";
 import { Receipt } from "./Receipt";
 
-// IPayment.ts
 export enum PaymentMethod {
   Money = "Dinheiro em espécie",
   Card = "Cartão",

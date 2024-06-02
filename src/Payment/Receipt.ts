@@ -1,4 +1,3 @@
-// Receipt.ts
 import { PaymentMethod } from "./IPayment";
 
 export class Receipt {
@@ -9,6 +8,12 @@ export class Receipt {
   ) {}
 
   printReceipt(): void {
-    console.log(`Receipt: ${this.idPayment} - Method: ${this.paymentMethod} - Value: ${this.valuePayment}`);
+    console.log(
+      `,____________________________________________________,\n` +
+        `|                                                   |\n` +
+        `|                      RECIBO                       |\n` +
+        `|___________________________________________________|\n ` +
+        `\n---> ID: ${this.idPayment} \n---> Método: ${this.paymentMethod} \n---> R$ ${this.valuePayment.toFixed(2) + "\n\n\n\n" }`
+    );
   }
 }
