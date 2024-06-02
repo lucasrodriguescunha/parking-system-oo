@@ -1,39 +1,33 @@
-import { Vehicle } from "../Vehicle/Vehicle"; // Importa a classe Vehicle
-import { IParkingSpot, VacancyType } from "./IParkingSpot"; // Importa a interface IParkingSpot e o tipo VacancyType
+import { IParkingSpot, VacancyType } from "./IParkingSpot";
+import { Vehicle } from "../Vehicle/Vehicle";
 
 export class ParkingSpot implements IParkingSpot {
-  idVacancy: number; // ID da vaga
-  vacancyType: VacancyType; // Tipo de vaga: carro, moto
-  isAvailable: boolean; // Vaga disponível?
-  vehicle: Vehicle | null = null; // Veículo designado à vaga (null se a vaga estiver disponível)
+  idVacancy: number;
+  vacancyType: VacancyType;
+  isAvailable: boolean;
+  vehicle: Vehicle | null = null;
 
-  constructor(
-    idVacancy: number, // ID da vaga
-    vacancyType: VacancyType, // Tipo de vaga: carro, moto
-    isAvailable: boolean // Vaga disponível?
-  ) {
-    this.idVacancy = idVacancy; // Inicializa o ID da vaga
-    this.vacancyType = vacancyType; // Inicializa o tipo de vaga
-    this.isAvailable = isAvailable; // Inicializa a disponibilidade da vaga
+  constructor(idVacancy: number, vacancyType: VacancyType, isAvailable: boolean) {
+    this.idVacancy = idVacancy;
+    this.vacancyType = vacancyType;
+    this.isAvailable = isAvailable;
   }
 
-  // Método para designar um veículo à vaga
   designateVehicle(vehicle: Vehicle): Vehicle | null {
-    if (this.isAvailable) { // Se a vaga estiver disponível
-      this.vehicle = vehicle; // Designa o veículo à vaga
-      this.isAvailable = false; // Define a vaga como ocupada
-      return vehicle; // Retorna o veículo designado
+    if (this.isAvailable) {
+      this.vehicle = vehicle;
+      this.isAvailable = false;
+      return vehicle;
     }
-    return null; // Retorna null se a vaga não estiver disponível
+    return null;
   }
 
-  // Método para liberar um veículo da vaga
   releaseVehicle(): void {
-    if (this.vehicle !== null) { // Se houver um veículo designado à vaga
-      this.vehicle = null; // Libera o veículo
-      this.isAvailable = true; // Define a vaga como disponível
+    if (this.vehicle !== null) {
+      this.vehicle = null;
+      this.isAvailable = true;
     } else {
-      throw new Error("Nenhum veículo para liberar."); // Lança um erro se não houver veículo designado à vaga
+      throw new Error("No vehicle to release.");
     }
   }
 }
