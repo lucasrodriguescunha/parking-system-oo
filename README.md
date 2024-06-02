@@ -6,6 +6,10 @@ Desenvolvimento de um Sistema de Estacionamento Usando TypeScript com código or
 
 ![Status: em desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge)
 
+### Diagrama UML
+
+[![](https://mermaid.ink/img/pako:eNqNU01PwzAM_StVTiC2P9ADHOgkLkiTijigXkxitogkrpx00jT230k_VqXthsihTfxe7Gc7PglJCkUupAHvCw07Blu5LK4t8Ld2u_LoA9psvf55zDY-gNTkwKILdJP2Djv4LxW1bMxtfBtdJR76b6d1JiY79Vi7HgIFMK0Kn2eusZ_ICXho7YX2NTl9QD2jnCuXBlmmMgmkVUu4EiTomnroLe4KbPcJjBeXPBTg7j5BjY7OFtBcWY9O5DiyWNCWqWaNAVhTnpWBY00TUm1AwnA7z_wc3hO3FzcuMKiov4CAS7gEreBpgXZpX1yHPvO0wx1JgokW4KLhqISm5Z0U4nlgviRBb5RjfCiz_oz2K6kewBBfaZ7FQIr-ulkzSfQeeCQlssRKWGQbxca56tRUIuzRYiXyuFXxlVeicufIgyZQeXRS5IEbXAmmZrcX-RcYH09NrWJ5h6Ecrah0IH4dxrb9rUQN7oPowjn_AqXHPbo?type=png)](https://mermaid.live/edit#pako:eNqNU01PwzAM_StVTiC2P9ADHOgkLkiTijigXkxitogkrpx00jT230k_VqXthsihTfxe7Gc7PglJCkUupAHvCw07Blu5LK4t8Ld2u_LoA9psvf55zDY-gNTkwKILdJP2Djv4LxW1bMxtfBtdJR76b6d1JiY79Vi7HgIFMK0Kn2eusZ_ICXho7YX2NTl9QD2jnCuXBlmmMgmkVUu4EiTomnroLe4KbPcJjBeXPBTg7j5BjY7OFtBcWY9O5DiyWNCWqWaNAVhTnpWBY00TUm1AwnA7z_wc3hO3FzcuMKiov4CAS7gEreBpgXZpX1yHPvO0wx1JgokW4KLhqISm5Z0U4nlgviRBb5RjfCiz_oz2K6kewBBfaZ7FQIr-ulkzSfQeeCQlssRKWGQbxca56tRUIuzRYiXyuFXxlVeicufIgyZQeXRS5IEbXAmmZrcX-RcYH09NrWJ5h6Ecrah0IH4dxrb9rUQN7oPowjn_AqXHPbo)
+
 ## 𝖥𝗎𝗇𝖼𝗂𝗈𝗇𝖺𝗅𝗂𝖽𝖺𝖽𝖾𝗌 𝖻𝖺́𝗌𝗂𝖼𝖺𝗌:
 
 ### 𝖱𝖾𝗀𝗂𝗌𝗍𝗋𝗈 𝖽𝖾 𝗏𝖾𝗂́𝖼𝗎𝗅𝗈𝗌:
@@ -57,10 +61,11 @@ Desenvolvimento de um Sistema de Estacionamento Usando TypeScript com código or
 - [ ] Controle de acesso (entrada/saída por QR code, RFID, etc.)
 
 
+
 ### Stack utilizada
 
-**Front-end:** JavaScript/TypeScript
-**Back-end:** Node.js
+JavaScript/TypeScript
+Node.js
 
 ### Instalação
 
