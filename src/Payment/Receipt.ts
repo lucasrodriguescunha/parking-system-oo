@@ -13,7 +13,7 @@ export class Receipt {
         `|                                                   |\n` +
         `|                      RECIBO                       |\n` +
         `|___________________________________________________|\n ` +
-        `\n---> ID: ${this.idPayment} \n---> Método: ${this.paymentMethod} \n---> R$ ${this.valuePayment.toFixed(2) + "\n\n\n\n" }`
+        `\n---> ID: ${this.idPayment} \n---> Método: ${this.paymentMethod} \n---> R$ ${this.valuePayment.toFixed(2)}`
     );
   }
 }

@@ -19,8 +19,8 @@ Desenvolvimento de um Sistema de Estacionamento Usando TypeScript com código or
 
 ### 𝖢𝖺́𝗅𝖼𝗎𝗅𝗈 𝖽𝖾 𝗍𝖺𝗋𝗂𝖿𝖺:
 
-- [ ] Tarifa baseada no tempo de estacionamento (por exemplo, por hora, por fração de hora, etc.)
-- [ ] Tarifa fixa para determinados períodos (diária, mensalidade)
+- [X] Tarifa baseada no tempo de estacionamento (por exemplo, por hora, por fração de hora, etc.)
+- [X] Tarifa fixa para determinados períodos (diária, mensalidade)
 
 ### 𝖢𝗈𝗇𝗍𝗋𝗈𝗅𝖾 𝖽𝖾 𝗏𝖺𝗀𝖺𝗌:
 
