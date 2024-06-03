@@ -8,7 +8,7 @@ Desenvolvimento de um Sistema de Estacionamento Usando TypeScript com código or
 
 ### Diagrama UML
 
-[![](https://mermaid.ink/img/pako:eNqNU01PwzAM_StVTiC2P9ADHOgkLkiTijigXkxitogkrpx00jT230k_VqXthsihTfxe7Gc7PglJCkUupAHvCw07Blu5LK4t8Ld2u_LoA9psvf55zDY-gNTkwKILdJP2Djv4LxW1bMxtfBtdJR76b6d1JiY79Vi7HgIFMK0Kn2eusZ_ICXho7YX2NTl9QD2jnCuXBlmmMgmkVUu4EiTomnroLe4KbPcJjBeXPBTg7j5BjY7OFtBcWY9O5DiyWNCWqWaNAVhTnpWBY00TUm1AwnA7z_wc3hO3FzcuMKiov4CAS7gEreBpgXZpX1yHPvO0wx1JgokW4KLhqISm5Z0U4nlgviRBb5RjfCiz_oz2K6kewBBfaZ7FQIr-ulkzSfQeeCQlssRKWGQbxca56tRUIuzRYiXyuFXxlVeicufIgyZQeXRS5IEbXAmmZrcX-RcYH09NrWJ5h6Ecrah0IH4dxrb9rUQN7oPowjn_AqXHPbo?type=png)](https://mermaid.live/edit#pako:eNqNU01PwzAM_StVTiC2P9ADHOgkLkiTijigXkxitogkrpx00jT230k_VqXthsihTfxe7Gc7PglJCkUupAHvCw07Blu5LK4t8Ld2u_LoA9psvf55zDY-gNTkwKILdJP2Djv4LxW1bMxtfBtdJR76b6d1JiY79Vi7HgIFMK0Kn2eusZ_ICXho7YX2NTl9QD2jnCuXBlmmMgmkVUu4EiTomnroLe4KbPcJjBeXPBTg7j5BjY7OFtBcWY9O5DiyWNCWqWaNAVhTnpWBY00TUm1AwnA7z_wc3hO3FzcuMKiov4CAS7gEreBpgXZpX1yHPvO0wx1JgokW4KLhqISm5Z0U4nlgviRBb5RjfCiz_oz2K6kewBBfaZ7FQIr-ulkzSfQeeCQlssRKWGQbxca56tRUIuzRYiXyuFXxlVeicufIgyZQeXRS5IEbXAmmZrcX-RcYH09NrWJ5h6Ecrah0IH4dxrb9rUQN7oPowjn_AqXHPbo)
+[![](https://mermaid.ink/img/pako:eNqNU01PwzAM_StVTiC2P9ADHOgkLkiThjigXkxitogkrpx00jT230k_VqUfQ-TQJn4v9rMdn4UkhSIX0oD3hYY9gy1dFtcW-Fu7_e7kA9psvf55zDY-gNTkwKILdJP2Dnv4LxW1rM1tfBtdJR66b6t1IiY7d1izHgIFMI0Kn2eutp_ICXhs7IX2FTl9RD2hXEqXBpmnMgqkVUNYCBJ0RR30FncFNvsExqtL7gtwd5-gRkdnM2iqrENHchxZLGjLVLHGAKwpz3zgWNOEVBmQ0N9egA_EzcWNCwwq6i8g4BzegVbwNEPbtK-uQ5d52uGWJMFEC3BRc1RC4_KOCvHcM1-SoDfKMTyUSX8G-0KqRzDEC82zGEjRXzcrJoneAw-kRJZYCYtso9g4V62aUoQDWixFHrcqvvJSlO4SeVAH2p2cFHngGleCqd4fRP4FxsdTXalY3n4oBysqHYhf-7FtfitRgfsgunIuv-RHPdo?type=png)](https://mermaid.live/edit#pako:eNqNU01PwzAM_StVTiC2P9ADHOgkLkiThjigXkxitogkrpx00jT230k_VqUfQ-TQJn4v9rMdn4UkhSIX0oD3hYY9gy1dFtcW-Fu7_e7kA9psvf55zDY-gNTkwKILdJP2Dnv4LxW1rM1tfBtdJR66b6t1IiY7d1izHgIFMI0Kn2eutp_ICXhs7IX2FTl9RD2hXEqXBpmnMgqkVUNYCBJ0RR30FncFNvsExqtL7gtwd5-gRkdnM2iqrENHchxZLGjLVLHGAKwpz3zgWNOEVBmQ0N9egA_EzcWNCwwq6i8g4BzegVbwNEPbtK-uQ5d52uGWJMFEC3BRc1RC4_KOCvHcM1-SoDfKMTyUSX8G-0KqRzDEC82zGEjRXzcrJoneAw-kRJZYCYtso9g4V62aUoQDWixFHrcqvvJSlO4SeVAH2p2cFHngGleCqd4fRP4FxsdTXalY3n4oBysqHYhf-7FtfitRgfsgunIuv-RHPdo)
 
 ## 𝖥𝗎𝗇𝖼𝗂𝗈𝗇𝖺𝗅𝗂𝖽𝖺𝖽𝖾𝗌 𝖻𝖺́𝗌𝗂𝖼𝖺𝗌:
 
@@ -30,7 +30,7 @@ Desenvolvimento de um Sistema de Estacionamento Usando TypeScript com código or
 
 - [X] Número total de vagas
 - [X] Número de vagas disponíveis
-- [ ] Designação de vagas específicas (para carros, motos, bicicletas, etc.)
+- [X] Designação de vagas específicas (para carros, motos, etc.)
 
 ### 𝖧𝗂𝗌𝗍𝗈́𝗋𝗂𝖼𝗈 𝖽𝖾 𝖾𝗌𝗍𝖺𝖼𝗂𝗈𝗇𝖺𝗆𝖾𝗇𝗍𝗈:
 
@@ -46,7 +46,7 @@ Desenvolvimento de um Sistema de Estacionamento Usando TypeScript com código or
 ### 𝖲𝗂𝗌𝗍𝖾𝗆𝖺 𝖽𝖾 𝗉𝖺𝗀𝖺𝗆𝖾𝗇𝗍𝗈:
 
 - [ ] Registro de pagamentos realizados
-- [ ] Métodos de pagamento (dinheiro, cartão, aplicativo)
+- [X] Métodos de pagamento (dinheiro, cartão, aplicativo)
 - [ ] Emissão de recibos
 
 ### 𝖦𝖾𝗌𝗍𝖺̃𝗈 𝖽𝖾 𝗎𝗌𝗎𝖺́𝗋𝗂𝗈𝗌:
@@ -59,8 +59,6 @@ Desenvolvimento de um Sistema de Estacionamento Usando TypeScript com código or
 
 - [ ] Monitoramento de câmeras (registro de imagens, se for possível)
 - [ ] Controle de acesso (entrada/saída por QR code, RFID, etc.)
-
-
 
 ### Stack utilizada
 
