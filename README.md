@@ -30,7 +30,7 @@ Desenvolvimento de um Sistema de Estacionamento Usando TypeScript com código or
 
 - [X] Número total de vagas
 - [X] Número de vagas disponíveis
-- [ ] Designação de vagas específicas (para carros, motos, bicicletas, etc.)
+- [X] Designação de vagas específicas (para carros, motos, etc.)
 
 ### 𝖧𝗂𝗌𝗍𝗈́𝗋𝗂𝖼𝗈 𝖽𝖾 𝖾𝗌𝗍𝖺𝖼𝗂𝗈𝗇𝖺𝗆𝖾𝗇𝗍𝗈:
 
@@ -46,7 +46,7 @@ Desenvolvimento de um Sistema de Estacionamento Usando TypeScript com código or
 ### 𝖲𝗂𝗌𝗍𝖾𝗆𝖺 𝖽𝖾 𝗉𝖺𝗀𝖺𝗆𝖾𝗇𝗍𝗈:
 
 - [ ] Registro de pagamentos realizados
-- [ ] Métodos de pagamento (dinheiro, cartão, aplicativo)
+- [X] Métodos de pagamento (dinheiro, cartão, aplicativo)
 - [ ] Emissão de recibos
 
 ### 𝖦𝖾𝗌𝗍𝖺̃𝗈 𝖽𝖾 𝗎𝗌𝗎𝖺́𝗋𝗂𝗈𝗌:
@@ -59,8 +59,6 @@ Desenvolvimento de um Sistema de Estacionamento Usando TypeScript com código or
 
 - [ ] Monitoramento de câmeras (registro de imagens, se for possível)
 - [ ] Controle de acesso (entrada/saída por QR code, RFID, etc.)
-
-
 
 ### Stack utilizada
 
