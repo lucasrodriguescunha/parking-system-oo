@@ -15,18 +15,24 @@ console.log(
     "|________________________________________|"
 );
 
-console.log("\nIndependente se for carro ou moto.");
-console.log("---> Até 15min          | Sem cobrança");
-console.log("---> De 15min até 30min | R$ 1,50");
-console.log("---> De 30min a 1h      | R$ 2,00");
-console.log("---> De 1h a 2h         | R$ 3,50");
-console.log("---> De 2h a 3h         | R$ 5,00");
-console.log("---> De 3h a 4h         | R$ 6,50");
-console.log("---> De 4h a 5h         | R$ 8,00");
-console.log("---> De 5h a 6h         | R$ 9,50");
-console.log("---> De 6h a 24h        | R$ 11,00");
-console.log("---> Mensalista         | R$ 250.00 ");
-
+console.log(",_________________________________________,");
+console.log("|                                         |");
+console.log("|    Independente se for carro ou moto    |");
+console.log("|_________________________________________|");
+console.log("|                                         |");
+console.log("| Até 15min               | Sem cobrança  |");
+console.log("| De 15min até 30min      | R$ 1,50       |");
+console.log("| De 30min a 1h           | R$ 2,00       |");
+console.log("| De 1h a 2h              | R$ 3,50       |");
+console.log("| De 2h a 3h              | R$ 5,00       |");
+console.log("| De 3h a 4h              | R$ 6,50       |");
+console.log("| De 4h a 5h              | R$ 8,00       |");
+console.log("| De 5h a 6h              | R$ 9,50       |");
+console.log("| De 6h a 24h             | R$ 11,00      |");
+console.log("|_________________________________________|");
+console.log("|                                         |");
+console.log("| Mensalista              | R$ 250.00     |");
+console.log("|_________________________________________|");
 console.log(
   "\nPor favor, estacione com cuidado e aproveite sua estadia conosco.\n"
 );
@@ -62,15 +68,12 @@ try {
 
   // Libera a vaga
   parking.releaseVehicle(myCar);
-
 } catch (error) {
   console.error("\nErro na execução. Observar atentamente o código.", error);
 }
 
-
 // Espaço entre os usuários
 console.log("\n\n\n\n");
-
 
 // Mensagem de boas-vindas
 console.log(
@@ -80,17 +83,24 @@ console.log(
     "|________________________________________|"
 );
 
-console.log("\nIndependente se for carro ou moto.");
-console.log("---> Até 15min          | Sem cobrança");
-console.log("---> De 15min até 30min | R$ 1,50");
-console.log("---> De 30min a 1h      | R$ 2,00");
-console.log("---> De 1h a 2h         | R$ 3,50");
-console.log("---> De 2h a 3h         | R$ 5,00");
-console.log("---> De 3h a 4h         | R$ 6,50");
-console.log("---> De 4h a 5h         | R$ 8,00");
-console.log("---> De 5h a 6h         | R$ 9,50");
-console.log("---> De 6h a 24h        | R$ 11,00");
-console.log("---> Mensalista         | R$ 250.00 ");
+console.log(",_________________________________________,");
+console.log("|                                         |");
+console.log("|    Independente se for carro ou moto    |");
+console.log("|_________________________________________|");
+console.log("|                                         |");
+console.log("| Até 15min               | Sem cobrança  |");
+console.log("| De 15min até 30min      | R$ 1,50       |");
+console.log("| De 30min a 1h           | R$ 2,00       |");
+console.log("| De 1h a 2h              | R$ 3,50       |");
+console.log("| De 2h a 3h              | R$ 5,00       |");
+console.log("| De 3h a 4h              | R$ 6,50       |");
+console.log("| De 4h a 5h              | R$ 8,00       |");
+console.log("| De 5h a 6h              | R$ 9,50       |");
+console.log("| De 6h a 24h             | R$ 11,00      |");
+console.log("|_________________________________________|");
+console.log("|                                         |");
+console.log("| Mensalista              | R$ 250.00     |");
+console.log("|_________________________________________|");
 
 console.log(
   "\nPor favor, estacione com cuidado e aproveite sua estadia conosco.\n"

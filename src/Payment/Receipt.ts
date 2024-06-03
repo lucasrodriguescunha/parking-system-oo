@@ -11,7 +11,7 @@ export class Receipt {
     console.log(
       `,____________________________________________________,\n` +
         `|                                                   |\n` +
-        `|                      RECIBO                       |\n` +
+        `|                 RECIBO A PAGAR                    |\n` +
         `|___________________________________________________|\n ` +
         `\n---> ID: ${this.idPayment} \n---> Método: ${this.paymentMethod} \n---> R$ ${this.valuePayment.toFixed(2)}`
     );
