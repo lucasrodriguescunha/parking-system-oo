@@ -1,4 +1,4 @@
-# 𝖯𝖺𝗋𝗄𝗂𝗇𝗀 𝖲𝗒𝗌𝗍𝖾𝗆
+# 𝖯𝖺𝗋𝗄𝗂𝗇𝗀 𝖲𝗒𝗌𝗍𝖾𝗆 v1.0.0
 
 Development of a Parking System Using TypeScript with Object-Oriented Code.
 
@@ -6,7 +6,7 @@ Desenvolvimento de um Sistema de Estacionamento Usando TypeScript com código or
 
 ![Status: em desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge)
 
-### Diagrama UML
+### 𝖣𝗂𝖺𝗀𝗋𝖺𝗆𝖺 𝖴𝖬𝖫
 
 [![](https://mermaid.ink/img/pako:eNqNU01PwzAM_StVTiC2P9ADHOgkLkiThjigXkxitogkrpx00jT230k_VqUfQ-TQJn4v9rMdn4UkhSIX0oD3hYY9gy1dFtcW-Fu7_e7kA9psvf55zDY-gNTkwKILdJP2Dnv4LxW1rM1tfBtdJR66b6t1IiY7d1izHgIFMI0Kn2eutp_ICXhs7IX2FTl9RD2hXEqXBpmnMgqkVUNYCBJ0RR30FncFNvsExqtL7gtwd5-gRkdnM2iqrENHchxZLGjLVLHGAKwpz3zgWNOEVBmQ0N9egA_EzcWNCwwq6i8g4BzegVbwNEPbtK-uQ5d52uGWJMFEC3BRc1RC4_KOCvHcM1-SoDfKMTyUSX8G-0KqRzDEC82zGEjRXzcrJoneAw-kRJZYCYtso9g4V62aUoQDWixFHrcqvvJSlO4SeVAH2p2cFHngGleCqd4fRP4FxsdTXalY3n4oBysqHYhf-7FtfitRgfsgunIuv-RHPdo?type=png)](https://mermaid.live/edit#pako:eNqNU01PwzAM_StVTiC2P9ADHOgkLkiThjigXkxitogkrpx00jT230k_VqUfQ-TQJn4v9rMdn4UkhSIX0oD3hYY9gy1dFtcW-Fu7_e7kA9psvf55zDY-gNTkwKILdJP2Dnv4LxW1rM1tfBtdJR66b6t1IiY7d1izHgIFMI0Kn2eutp_ICXhs7IX2FTl9RD2hXEqXBpmnMgqkVUNYCBJ0RR30FncFNvsExqtL7gtwd5-gRkdnM2iqrENHchxZLGjLVLHGAKwpz3zgWNOEVBmQ0N9egA_EzcWNCwwq6i8g4BzegVbwNEPbtK-uQ5d52uGWJMFEC3BRc1RC4_KOCvHcM1-SoDfKMTyUSX8G-0KqRzDEC82zGEjRXzcrJoneAw-kRJZYCYtso9g4V62aUoQDWixFHrcqvvJSlO4SeVAH2p2cFHngGleCqd4fRP4FxsdTXalY3n4oBysqHYhf-7FtfitRgfsgunIuv-RHPdo)
 
@@ -60,7 +60,7 @@ Desenvolvimento de um Sistema de Estacionamento Usando TypeScript com código or
 - [ ] Monitoramento de câmeras (registro de imagens, se for possível)
 - [ ] Controle de acesso (entrada/saída por QR code, RFID, etc.)
 
-### Stack utilizada
+### 𝖲𝗍𝖺𝖼𝗄 𝗎𝗍𝗂𝗅𝗂𝗓𝖺𝖽𝖺
 
 Visual Studio Code,
 Git, GitHub,
@@ -69,7 +69,7 @@ StarUML, Mermaid
 JavaScript/TypeScript
 Node.js
 
-### Instalação
+### 𝖨𝗇𝗌𝗍𝖺𝗅𝖺𝖼̧𝖺̃𝗈
 
 ```bash
   git clone https://github.com/lucasrodriguescunha/parking-system-oo.git
@@ -77,10 +77,10 @@ Node.js
   npm run start
 ```
 
-### Autor
+### 𝖠𝗎𝗍𝗈𝗋
 
 - [@lucasrodriguescunha](https://www.github.com/lucasrodriguescunha)
 
-### Licença
+### 𝖫𝗂𝖼𝖾𝗇𝖼̧𝖺
 
 [MIT](https://choosealicense.com/licenses/mit/)
