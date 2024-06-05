@@ -63,8 +63,8 @@ Desenvolvimento de um Sistema de Estacionamento Usando TypeScript com código or
 ### Stack utilizada
 
 Visual Studio Code
-Git e GitHub
-StarUML e Mermaid
+Git, GitHub
+StarUML, Mermaid
 
 JavaScript/TypeScript
 Node.js
