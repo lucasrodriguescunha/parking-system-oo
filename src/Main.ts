@@ -111,8 +111,8 @@ const myCar2 = new Vehicle(
   "Maria Souza",
   "ABC1234",
   VacancyType.Car,
-  new Date("2024-06-02T09:00:00"),
-  new Date("2024-06-02T13:30:00")
+  new Date("2024-06-05T09:00:00"),
+  new Date("2024-06-05T13:30:00")
 );
 
 try {
