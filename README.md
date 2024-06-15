@@ -1,19 +1,18 @@
 # 𝖯𝖺𝗋𝗄𝗂𝗇𝗀 𝖲𝗒𝗌𝗍𝖾𝗆 v1.0.0
 
+### 📌 About
+
 Development of a Parking System Using TypeScript with Object-Oriented Code.
 
 Desenvolvimento de um Sistema de Estacionamento Usando TypeScript com código orientado a objetos.
 
 ![Status: em desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge)
 
-[JAVASCRIPT__BADGE]: https://img.shields.io/badge/Javascript-000?style=for-the-badge&logo=javascript
-[TYPESCRIPT__BADGE]: https://img.shields.io/badge/typescript-D4FAFF?style=for-the-badge&logo=typescript
-
-### 𝖣𝗂𝖺𝗀𝗋𝖺𝗆𝖺 𝖴𝖬𝖫
+### 📌 𝖣𝗂𝖺𝗀𝗋𝖺𝗆𝖺 𝖴𝖬𝖫
 
 [![](https://mermaid.ink/img/pako:eNqNU01PwzAM_StVTiC2P9ADHOgkLkiThjigXkxitogkrpx00jT230k_VqUfQ-TQJn4v9rMdn4UkhSIX0oD3hYY9gy1dFtcW-Fu7_e7kA9psvf55zDY-gNTkwKILdJP2Dnv4LxW1rM1tfBtdJR66b6t1IiY7d1izHgIFMI0Kn2eutp_ICXhs7IX2FTl9RD2hXEqXBpmnMgqkVUNYCBJ0RR30FncFNvsExqtL7gtwd5-gRkdnM2iqrENHchxZLGjLVLHGAKwpz3zgWNOEVBmQ0N9egA_EzcWNCwwq6i8g4BzegVbwNEPbtK-uQ5d52uGWJMFEC3BRc1RC4_KOCvHcM1-SoDfKMTyUSX8G-0KqRzDEC82zGEjRXzcrJoneAw-kRJZYCYtso9g4V62aUoQDWixFHrcqvvJSlO4SeVAH2p2cFHngGleCqd4fRP4FxsdTXalY3n4oBysqHYhf-7FtfitRgfsgunIuv-RHPdo?type=png)](https://mermaid.live/edit#pako:eNqNU01PwzAM_StVTiC2P9ADHOgkLkiThjigXkxitogkrpx00jT230k_VqUfQ-TQJn4v9rMdn4UkhSIX0oD3hYY9gy1dFtcW-Fu7_e7kA9psvf55zDY-gNTkwKILdJP2Dnv4LxW1rM1tfBtdJR66b6t1IiY7d1izHgIFMI0Kn2eutp_ICXhs7IX2FTl9RD2hXEqXBpmnMgqkVUNYCBJ0RR30FncFNvsExqtL7gtwd5-gRkdnM2iqrENHchxZLGjLVLHGAKwpz3zgWNOEVBmQ0N9egA_EzcWNCwwq6i8g4BzegVbwNEPbtK-uQ5d52uGWJMFEC3BRc1RC4_KOCvHcM1-SoDfKMTyUSX8G-0KqRzDEC82zGEjRXzcrJoneAw-kRJZYCYtso9g4V62aUoQDWixFHrcqvvJSlO4SeVAH2p2cFHngGleCqd4fRP4FxsdTXalY3n4oBysqHYhf-7FtfitRgfsgunIuv-RHPdo)
 
-## 𝖥𝗎𝗇𝖼𝗂𝗈𝗇𝖺𝗅𝗂𝖽𝖺𝖽𝖾𝗌 𝖻𝖺́𝗌𝗂𝖼𝖺𝗌:
+## 📌 𝖥𝗎𝗇𝖼𝗂𝗈𝗇𝖺𝗅𝗂𝖽𝖺𝖽𝖾𝗌 𝖻𝖺́𝗌𝗂𝖼𝖺𝗌:
 
 ### 𝖱𝖾𝗀𝗂𝗌𝗍𝗋𝗈 𝖽𝖾 𝗏𝖾𝗂́𝖼𝗎𝗅𝗈𝗌:
 
@@ -22,7 +21,7 @@ Desenvolvimento de um Sistema de Estacionamento Usando TypeScript com código or
 - [X] Horário de entrada
 - [X] Horário de saída (se necessário)
 
-## 𝖥𝗎𝗇𝖼𝗂𝗈𝗇𝖺𝗅𝗂𝖽𝖺𝖽𝖾𝗌 𝖺𝖽𝗂𝖼𝗂𝗈𝗇𝖺𝗂𝗌:
+## 📌 𝖥𝗎𝗇𝖼𝗂𝗈𝗇𝖺𝗅𝗂𝖽𝖺𝖽𝖾𝗌 𝖺𝖽𝗂𝖼𝗂𝗈𝗇𝖺𝗂𝗌:
 
 ### 𝖢𝖺́𝗅𝖼𝗎𝗅𝗈 𝖽𝖾 𝗍𝖺𝗋𝗂𝖿𝖺:
 
@@ -63,7 +62,7 @@ Desenvolvimento de um Sistema de Estacionamento Usando TypeScript com código or
 - [ ] Monitoramento de câmeras (registro de imagens, se for possível)
 - [ ] Controle de acesso (entrada/saída por QR code, RFID, etc.)
 
-### 𝖲𝗍𝖺𝖼𝗄 𝗎𝗍𝗂𝗅𝗂𝗓𝖺𝖽𝖺
+### 📌 Ferramentas 𝗎𝗍𝗂𝗅𝗂𝗓𝖺𝖽𝖺s
 
 Visual Studio Code,
 Git, GitHub,
@@ -72,7 +71,7 @@ StarUML, Mermaid
 JavaScript/TypeScript
 Node.js
 
-### 𝖨𝗇𝗌𝗍𝖺𝗅𝖺𝖼̧𝖺̃𝗈
+### 📌 𝖨𝗇𝗌𝗍𝖺𝗅𝖺𝖼̧𝖺̃𝗈
 
 ```bash
   git clone https://github.com/lucasrodriguescunha/parking-system-oo.git
