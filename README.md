@@ -6,6 +6,9 @@ Desenvolvimento de um Sistema de Estacionamento Usando TypeScript com código or
 
 ![Status: em desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge)
 
+[JAVASCRIPT__BADGE]: https://img.shields.io/badge/Javascript-000?style=for-the-badge&logo=javascript
+[TYPESCRIPT__BADGE]: https://img.shields.io/badge/typescript-D4FAFF?style=for-the-badge&logo=typescript
+
 ### 𝖣𝗂𝖺𝗀𝗋𝖺𝗆𝖺 𝖴𝖬𝖫
 
 [![](https://mermaid.ink/img/pako:eNqNU01PwzAM_StVTiC2P9ADHOgkLkiThjigXkxitogkrpx00jT230k_VqUfQ-TQJn4v9rMdn4UkhSIX0oD3hYY9gy1dFtcW-Fu7_e7kA9psvf55zDY-gNTkwKILdJP2Dnv4LxW1rM1tfBtdJR66b6t1IiY7d1izHgIFMI0Kn2eutp_ICXhs7IX2FTl9RD2hXEqXBpmnMgqkVUNYCBJ0RR30FncFNvsExqtL7gtwd5-gRkdnM2iqrENHchxZLGjLVLHGAKwpz3zgWNOEVBmQ0N9egA_EzcWNCwwq6i8g4BzegVbwNEPbtK-uQ5d52uGWJMFEC3BRc1RC4_KOCvHcM1-SoDfKMTyUSX8G-0KqRzDEC82zGEjRXzcrJoneAw-kRJZYCYtso9g4V62aUoQDWixFHrcqvvJSlO4SeVAH2p2cFHngGleCqd4fRP4FxsdTXalY3n4oBysqHYhf-7FtfitRgfsgunIuv-RHPdo?type=png)](https://mermaid.live/edit#pako:eNqNU01PwzAM_StVTiC2P9ADHOgkLkiThjigXkxitogkrpx00jT230k_VqUfQ-TQJn4v9rMdn4UkhSIX0oD3hYY9gy1dFtcW-Fu7_e7kA9psvf55zDY-gNTkwKILdJP2Dnv4LxW1rM1tfBtdJR66b6t1IiY7d1izHgIFMI0Kn2eutp_ICXhs7IX2FTl9RD2hXEqXBpmnMgqkVUNYCBJ0RR30FncFNvsExqtL7gtwd5-gRkdnM2iqrENHchxZLGjLVLHGAKwpz3zgWNOEVBmQ0N9egA_EzcWNCwwq6i8g4BzegVbwNEPbtK-uQ5d52uGWJMFEC3BRc1RC4_KOCvHcM1-SoDfKMTyUSX8G-0KqRzDEC82zGEjRXzcrJoneAw-kRJZYCYtso9g4V62aUoQDWixFHrcqvvJSlO4SeVAH2p2cFHngGleCqd4fRP4FxsdTXalY3n4oBysqHYhf-7FtfitRgfsgunIuv-RHPdo)
